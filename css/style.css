@@ -176,10 +176,11 @@ section p {
 
 /* フッター */
 footer {
-  background: #f1f1f1;
+  background: #f4f8f9; /* ごく淡い水色グレー */
   text-align: center;
-  padding: 1rem;
+  padding: 1.2rem 0;
   font-size: 0.9rem;
+  color: #444;
 }
 
 /* モバイル対応 */
@@ -396,4 +397,5 @@ button[title]:hover::after {
   padding: 4px 8px;
   border-radius: 4px;
   white-space: nowrap;
+
 }
