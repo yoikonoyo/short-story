@@ -399,7 +399,6 @@ button[title]:hover::after {
   white-space: nowrap;
 }
 
-}
 .qr-section {
   text-align: center;
   color: #666;
@@ -450,6 +449,7 @@ button[title]:hover::after {
     width: 100px;
   }
 }
+
 
 
 
