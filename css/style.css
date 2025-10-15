@@ -176,7 +176,7 @@ section p {
 
 /* フッター */
 footer {
-  background: #f4f8f9; /* ごく淡い水色グレー */
+  background: #f6f5f3; /* ごく淡いベージュグレー */
   text-align: center;
   padding: 1.2rem 0;
   font-size: 0.9rem;
@@ -399,3 +399,4 @@ button[title]:hover::after {
   white-space: nowrap;
 
 }
+
