@@ -409,6 +409,7 @@ button[title]:hover::after {
 
 .qr-section p {
   margin-bottom: 1rem;
+  text-align: center !important;
 }
 
 .qr-grid {
@@ -438,10 +439,6 @@ button[title]:hover::after {
   font-size: 0.85rem;
   color: #444;
 }
-.qr-section p {
-  margin-bottom: 1rem;
-  text-align: center; /* 追加 */
-}
 
 /* モバイル対応 */
 @media (max-width: 480px) {
@@ -453,6 +450,7 @@ button[title]:hover::after {
     width: 100px;
   }
 }
+
 
 
 
