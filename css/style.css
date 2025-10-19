@@ -449,6 +449,7 @@ button[title]:hover::after {
   color: #666;
   line-height: 1.7;
   font-style: italic;  /* 少し詩的に見せるオプション */
+  box-sizing: border-box;
 }
 
 
@@ -463,6 +464,7 @@ button[title]:hover::after {
   }
  ｝
   
+
 
 
 
