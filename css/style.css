@@ -450,15 +450,16 @@ button[title]:hover::after {
   }
   
 .spin-off-note {
-  display: block !important;
-  max-width: 800px !important;       /* 本文の幅に合わせる（必要なら調整） */
-  margin: 2.5em auto 3em auto !important; /* 上下にゆとりを持たせる */
-  padding: 0 1em !important;         /* 左右に少し余白 */
-  text-align: left !important;       /* 強制的に左揃え */
+  display: block;
+  max-width: 800px;
+  margin: 2.5em auto 3.5em auto;  /* 上下の余白を広げてゆったり */
+  padding: 0 1rem;                /* mainと同じ余白で揃える */
+  text-align: left;               /* 本文と自然に一体化 */
   font-size: 0.9em;
   color: #666;
-  line-height: 1.6;
+  line-height: 1.7;
 }
+
 
 
 
