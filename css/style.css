@@ -448,7 +448,6 @@ button[title]:hover::after {
   .qr-item img {
     width: 100px;
   }
-}
 .spin-off-note {
   display: block;
   max-width: 800px;        /* 本文と同じ幅に収める（必要に応じて変更） */
@@ -459,6 +458,7 @@ button[title]:hover::after {
   color: #666;              /* 少し淡い色で控えめに */
   line-height: 1.6;         /* 読みやすい行間 */
 }
+
 
 
 
