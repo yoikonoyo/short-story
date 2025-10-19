@@ -441,19 +441,13 @@ button[title]:hover::after {
 
 /* スピンオフ表示ノート（本文枠にぴったり収まる右寄せ） */
 .spin-off-note {
-  display: block;
-  width: 100%;                /* 本文枠と同じ幅に */
-  max-width: 800px;           /* mainと揃える */
-  margin: 2.5em auto 3.5em auto;
-  padding: 0 1rem;            /* mainと同じパディング */
-  text-align: right;          /* 右寄せ */
-  font-size: 0.9em;
-  color: #666;
-  line-height: 1.7;
-  font-style: italic;         /* 少し詩的に見せる */
-  box-sizing: border-box;     /* パディング込みで幅を計算 */
+  width: 100% !important;
+  max-width: 800px !important;
+  margin: 2.5em auto 3.5em auto !important;
+  padding: 0 1rem !important;
+  text-align: right !important;
+  box-sizing: border-box !important;
 }
-
 
 /* モバイル対応 */
 @media (max-width: 480px) {
@@ -466,6 +460,7 @@ button[title]:hover::after {
   }
  ｝
   
+
 
 
 
