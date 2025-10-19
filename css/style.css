@@ -448,15 +448,16 @@ button[title]:hover::after {
   .qr-item img {
     width: 100px;
   }
+  
 .spin-off-note {
-  display: block;
-  max-width: 800px;        /* 本文と同じ幅に収める（必要に応じて変更） */
-  margin: 2em auto 3em auto; /* 上下余白を広げ、中央に配置（autoで左右均等） */
-  padding-left: 0;          /* 左ズレをなくす */
-  text-align: left;         /* 本文と同じく左揃え */
-  font-size: 0.9em;         /* やや控えめサイズ */
-  color: #666;              /* 少し淡い色で控えめに */
-  line-height: 1.6;         /* 読みやすい行間 */
+  display: block !important;
+  max-width: 800px !important;       /* 本文の幅に合わせる（必要なら調整） */
+  margin: 2.5em auto 3em auto !important; /* 上下にゆとりを持たせる */
+  padding: 0 1em !important;         /* 左右に少し余白 */
+  text-align: left !important;       /* 強制的に左揃え */
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.6;
 }
 
 
