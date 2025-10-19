@@ -441,15 +441,16 @@ button[title]:hover::after {
 
 .spin-off-note {
   display: block;
-  max-width: 800px;
+  max-width: 100%;        /* mainと同じ幅に */
+  width: 100%;            /* これも重要 */
   margin: 2.5em auto 3.5em auto;
-  padding: 0 1rem;
-  text-align: right;
+  padding: 0 1rem;        /* mainと揃える */
+  text-align: right;      /* 右寄せの場合 */
   font-size: 0.9em;
   color: #666;
   line-height: 1.7;
-  font-style: italic;  /* 少し詩的に見せるオプション */
-  box-sizing: border-box;
+  font-style: italic;
+  box-sizing: border-box; /* 幅計算にパディングを含める */
 }
 
 
@@ -464,6 +465,7 @@ button[title]:hover::after {
   }
  ｝
   
+
 
 
 
