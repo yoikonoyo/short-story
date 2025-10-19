@@ -445,7 +445,7 @@ button[title]:hover::after {
   max-width: 800px !important;
   margin: 2.5em auto 3.5em auto !important;
   padding: 0 1rem !important;
-  text-align: right !important;
+  text-align: center !important;
   box-sizing: border-box !important;
 }
 
@@ -459,6 +459,7 @@ button[title]:hover::after {
     width: 100px;
   }
  ｝
+
 
 
 
