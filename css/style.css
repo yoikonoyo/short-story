@@ -452,15 +452,14 @@ button[title]:hover::after {
 .spin-off-note {
   display: block;
   max-width: 800px;
-  margin: 2.5em auto 3.5em auto;  /* 上下の余白を広げてゆったり */
-  padding: 0 1rem;                /* mainと同じ余白で揃える */
-  text-align: left;               /* 本文と自然に一体化 */
+  margin: 2.5em auto 3.5em auto;
+  padding: 0 1rem;
+  text-align: right;
   font-size: 0.9em;
   color: #666;
   line-height: 1.7;
+  font-style: italic;  /* 少し詩的に見せるオプション */
 }
-
-
 
 
 
