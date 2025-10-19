@@ -448,6 +448,7 @@ button[title]:hover::after {
   .qr-item img {
     width: 100px;
   }
+ ｝
   
 .spin-off-note {
   display: block;
@@ -460,6 +461,7 @@ button[title]:hover::after {
   line-height: 1.7;
   font-style: italic;  /* 少し詩的に見せるオプション */
 }
+
 
 
 
