@@ -450,11 +450,14 @@ button[title]:hover::after {
   }
 }
 .spin-off-note {
-  text-align: left;           /* 左寄せ（本文と同じ位置） */
-  margin: 2em 0 3em 0;        /* 上下の余白をしっかりとる */
-  font-size: 0.95em;          /* やや小さめで控えめに */
-  color: #666;                /* 本文より少し淡い色で */
-  padding-left: 1em;          /* 本文とズレないよう軽く内側に */
+  display: block;
+  max-width: 800px;        /* 本文と同じ幅に収める（必要に応じて変更） */
+  margin: 2em auto 3em auto; /* 上下余白を広げ、中央に配置（autoで左右均等） */
+  padding-left: 0;          /* 左ズレをなくす */
+  text-align: left;         /* 本文と同じく左揃え */
+  font-size: 0.9em;         /* やや控えめサイズ */
+  color: #666;              /* 少し淡い色で控えめに */
+  line-height: 1.6;         /* 読みやすい行間 */
 }
 
 
