@@ -439,18 +439,6 @@ button[title]:hover::after {
   color: #444;
 }
 
-
-/* モバイル対応 */
-@media (max-width: 480px) {
-  .qr-grid {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  .qr-item img {
-    width: 100px;
-  }
- ｝
-
 /* スピンオフ表示ノート（本文枠にぴったり収まる右寄せ） */
 .spin-off-note {
   display: block;
@@ -466,6 +454,21 @@ button[title]:hover::after {
   box-sizing: border-box;     /* パディング込みで幅を計算 */
 }
   
+
+
+
+/* モバイル対応 */
+@media (max-width: 480px) {
+  .qr-grid {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .qr-item img {
+    width: 100px;
+  }
+ ｝
+
+
 
 
 
