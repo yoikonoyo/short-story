@@ -439,18 +439,19 @@ button[title]:hover::after {
   color: #444;
 }
 
+/* スピンオフ表示ノート（本文枠にぴったり収まる右寄せ） */
 .spin-off-note {
   display: block;
-  max-width: 100%;        /* mainと同じ幅に */
-  width: 100%;            /* これも重要 */
+  width: 100%;                /* 本文枠と同じ幅に */
+  max-width: 800px;           /* mainと揃える */
   margin: 2.5em auto 3.5em auto;
-  padding: 0 1rem;        /* mainと揃える */
-  text-align: right;      /* 右寄せの場合 */
+  padding: 0 1rem;            /* mainと同じパディング */
+  text-align: right;          /* 右寄せ */
   font-size: 0.9em;
   color: #666;
   line-height: 1.7;
-  font-style: italic;
-  box-sizing: border-box; /* 幅計算にパディングを含める */
+  font-style: italic;         /* 少し詩的に見せる */
+  box-sizing: border-box;     /* パディング込みで幅を計算 */
 }
 
 
@@ -465,6 +466,7 @@ button[title]:hover::after {
   }
  ｝
   
+
 
 
 
