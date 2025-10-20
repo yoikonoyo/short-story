@@ -452,7 +452,8 @@ document.querySelector('.decrease-font').addEventListener('click', () => {
     (parseFloat(getComputedStyle(document.body).fontSize) - 1) + 'px';
 });
 </script>
-  <!-- 🔊 朗読ボタン（ページの上や下に設置してください） -->
+  
+<!-- 🔊 朗読ボタン -->
 <button id="readButton" style="
   background-color: #f0f0f0;
   color: #333;
@@ -467,6 +468,8 @@ document.querySelector('.decrease-font').addEventListener('click', () => {
   🔊 朗読する
 </button>
 
+<p>テスト表示</p>
+
 <!-- 🎵 ボタンのホバー効果 -->
 <script>
 const btn = document.getElementById("readButton");
@@ -480,14 +483,12 @@ let isSpeaking = false;
 
 document.getElementById("readButton").addEventListener("click", () => {
   if (isSpeaking) {
-    // すでに朗読中なら停止
     window.speechSynthesis.cancel();
     isSpeaking = false;
     btn.textContent = "🔊 朗読する";
     return;
   }
 
-  // ページ全体のテキストを取得（script, styleタグは除外）
   const textNodes = Array.from(document.body.querySelectorAll("*"))
     .filter(el => el.childNodes.length === 1 && el.childNodes[0].nodeType === Node.TEXT_NODE)
     .map(el => el.textContent.trim())
@@ -495,33 +496,30 @@ document.getElementById("readButton").addEventListener("click", () => {
     .join("。");
 
   const speech = new SpeechSynthesisUtterance(textNodes);
-  speech.lang = "ja-JP"; // 日本語
-  speech.rate = 1;       // 話す速さ（0.5〜2）
-  speech.pitch = 1;      // 声の高さ
-  speech.volume = 1;     // 音量（0〜1）
+  speech.lang = "ja-JP";
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.volume = 1;
 
-  // 再生開始時
   speech.onstart = () => {
     isSpeaking = true;
     btn.textContent = "⏹ 停止";
   };
 
-  // 再生終了時
   speech.onend = () => {
     isSpeaking = false;
     btn.textContent = "🔊 朗読する";
   };
 
-  // 再生
   window.speechSynthesis.speak(speech);
 });
 </script>
-<p>テスト表示</p>
 
-
+  
 </body>
 
 </html>
+
 
 
 
