@@ -176,7 +176,7 @@ section p {
 
 /* フッター */
 footer {
-  background: #f6f5f3; /* ごく淡いベージュグレー */
+  background: #f4f0fa; /* ごく淡い紫 */
   text-align: center;
   padding: 1.2rem 0;
   font-size: 0.9rem;
@@ -465,6 +465,7 @@ button[title]:hover::after {
     width: 100px;
   }
  ｝
+
 
 
 
